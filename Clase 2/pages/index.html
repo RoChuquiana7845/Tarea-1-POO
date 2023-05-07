@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 2: Primeros pasos en Html</title>
+    <link rel="shortcut icon" href="./img/icono del sitio web.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <section class="container1">
+        <h1 class="childH1">Aprendiendo html</h1>
+        <h2><strong>Listas</strong></h2>
+        <p> Listas ordenadas <em>ol</em> y listas no ordenadas <em>ul</em></p>
+    </section>
+
+    <hr>
+
+    <div class="fatherItem">
+        <section class="childItem1">
+            <h2> Listas ordenadas</h2>
+            <ol>
+                <li>
+                    Inicio
+                </li>
+                <li>
+                    Quiénes somos
+                </li>
+                <li>
+                    Servicios
+                </li>
+                <li>
+                    Contacto
+                </li>
+                <li>
+                    <a href="#formulario">
+                        Footer
+                    </a>
+                </li>
+            </ol>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Listas no ordenadas</h2>
+            <p> <b>Productos</b></p>
+            <ul>
+                <li>Café</li>
+                <li>Harina</li>
+                <li>Azúcar</li>
+                <li>Pasta de tomate</li>
+            </ul>
+        </section>
+    </div>
+
+    <hr>
+
+    <section class="container2">
+        <h2> <b> Tablas</b></h2>
+        <table border="1" aria-describedby="Inventario">
+            <tr>
+                <th>Producto</th>
+                <th>Color</th>
+                <th>Precio</th>
+                <th>Código</th>
+            </tr>
+            <tr>
+                <td>Camisa</td>
+                <td>Verde</td>
+                <td>40.00$</td>
+                <td>12045</td>
+            </tr>
+            <tr>
+                <td>Pantalon</td>
+                <td>Naranja</td>
+                <td>60.00$</td>
+                <td>13158</td>
+            </tr>
+        </table>
+    </section>
+
+    <hr>
+
+    <section class="container3">
+        <h2> Formularios</h2>
+        <form id="formulario" class="form1">
+
+            <label for="nombre">
+                Nombre
+                <input type="text" placeholder="Digita lo que desee" id="nombre" required="required">
+            </label>
+
+            <label for="email">
+                E-mail
+                <input type="email" placeholder="Digita un correo" id="email" required>
+            </label>
+
+            <label for="número">
+                Número
+                <input type="number" placeholder="DIgita un numero" id="número" required>
+            </label>
+
+            <label for="mensaje">
+                Mensaje...
+                <textarea name="" id="mensaje" cols="25" rows="10" placeholder="Dgite sus comentarios" required></textarea>
+            </label>
+
+            <br>
+
+            <label for="si">
+                <input type="radio" name="siono" id="si"> Sí
+            </label>
+
+            <label for="no">
+                <input type="radio" name="siono" id="no"> No
+            </label>
+
+            <label for="talvez">
+                <input type="radio" name="siono" id="talvez"> Tal vez
+            </label>
+
+            <br>
+            <br>
+
+            <label for="sicheck">
+                <input type="checkbox" name="check" id="sicheck"> Sí
+            </label>
+
+            <label for="nocheck">
+                <input type="checkbox" name="check" id="nocheck"> No
+            </label>
+
+            <label for="talvezcheck">
+                <input type="checkbox" name="check" id="talvezcheck"> Tal vez
+            </label>
+
+            <br>
+            <br>
+
+            <label>
+                Paises:
+                <select name="" id="">
+                    <option disabled="'disabled" selected="selected">Seleccionar un país</option>
+                    <option>Ecuador</option>
+                    <option>Perú</option>
+                    <option>Paraguay</option>
+                    <option>Uruguay</option>
+                </select>
+            </label>  
+
+            <br>
+            <br>
+
+            <button type="submit">Enviar</button>
+            <button type="reset">Reset</button>
+        </form>
+    </section>
+
+    <hr>
+
+    <section class="container4">            
+        
+        <hr>
+
+        <div class="box1">
+            <h2>Enlaces</h2>
+            <a href="https://www.google.com" target="_blank" rel="noopener">Google xD</a>
+            <a href="./contacto.html">Contactos</a>
+        </div>
+
+        <hr>
+
+        <div class="box2">
+            <h2>Logos</h2>
+            <img src="../img/logo-Gmail-1.png" alt="logo de gmail" width="200px" height="100px" title="Logo de gmail">
+        </div>
+        
+        <hr>
+
+        <div class="box3">
+            <h2>Video</h2>
+            <p> embed es la palabra para ingresar contenido en un sitio web</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/WXDIA8K1Fqc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+    </section>
+</body>
+</html>

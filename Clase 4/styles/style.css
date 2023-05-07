@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+
+.menu {
+    list-style-type: none;
+    background-color: rgb(60, 238, 137);
+    padding-block: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.menu_item {
+    display: inline;
+    margin-inline: 20px;
+}
+ 
+.menu_item a {
+    color: black;
+    text-decoration: none;
+}
+
+.menu_item.active, 
+.menu_item a:hover {
+    text-decoration: underline double;   
+}
+
+main {
+   padding: 40px;
+}
+
+/* Cartitas */
+.carta {
+    width: 30%; 
+    background-color: bisque;
+    padding: 10px;
+    border-radius: 10px; 
+    display: inline-block;
+    margin-inline: 1.5%;
+    margin-block: 20px;
+    height: 350px;
+    overflow: auto;
+    position: relative;
+    border: 2px double rgb(255, 172, 63);
+}
+
+.carta_imagen {
+    width: 100%;
+}
+
+.carta_titulo {
+    font-size: 16px;
+    text-align: center;
+}
+
+.carta_parrafo {
+    font-size: 14px;
+    text-align: justify;
+}
+
+.carta_boton {
+    background-color: rgb(60, 238, 137);
+    border:0;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.carta_stw {
+    width: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.carta_imagen,
+.carta_titulo,
+.carta_parrafo {
+    margin-bottom: 10px;
+}
+
+.stw {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 100px;
+}
+
+.contenido,
+.imagen {
+    text-align: center;
+    background-image: url(../img/otroDark-soul.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}

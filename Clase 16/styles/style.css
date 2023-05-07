@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;400;600;800;900&family=Nunito:wght@200;300;400;500;600;700;800;900;1000&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inconsolata', monospace;
+}
+
+header {
+    background: rgb(67,8,34);
+    background: linear-gradient(90deg, rgba(67,8,34,0.8279644621520483) 0%, rgba(65,101,164,1) 35%, rgba(39,13,62,1) 97%, rgba(33,11,60,0.7831465349811799) 100%);  
+    display: flex;
+    gap: 60px;
+    grid-gap:20px;
+}
+
+.logo {
+    width: 100px;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    grid-gap: 10px;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.menu__item a {
+    background-color: white;
+    border: 3px solid white;
+    color: rgb(32, 52, 122);
+    text-decoration: none;
+    padding: .3rem;
+}
+
+/**************** Pseudoclases ******************/
+
+.menu__item:nth-child(2) a {
+    background: rgb(25, 3, 56);
+    border: 3px solid rgba(255, 255, 255, 0.677);
+    color: white;
+}
+
+.menu__item:first-child a {
+    background-color: black;
+    color: white;
+}
+
+.menu__item:last-child a {
+    background-color: black;
+    color: white;
+}
+
+.menu__item a.menu__link {
+    border-color: rgb(47, 1, 1);
+}
+
+.menu__item a:not(.menu__link) {
+    border-color: rgb(6, 6, 103);
+}
+
+.menu__item a:hover{
+    transition: background 0.1s, color 2s;
+    color: white;
+    background: linear-gradient(90deg, rgba(67,8,34,0.8279644621520483) 0%, rgba(65,101,164,1) 35%, rgba(39,13,62,1) 97%, rgba(33,11,60,0.7831465349811799) 100%);
+}
+
+
+.menu__item.active a {
+    text-decoration: underline double;
+}
+
+.imagePrincipal {
+    height: 100vh;
+    background-image: url("../img/darksouls.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-inline: 150px;
+}
+
+.imagePrincipal h2 {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.214);
+    padding-inline: 15px;
+
+}
+
+/********** Pseudoelementos *********/
+
+*::selection {
+    background-color: black;
+    color: aquamarine;
+}
+
+.imagePrincipal h2::first-letter {
+    color:aquamarine;
+    font-size: 42px;
+}
+
+.imagePrincipal h2::selection {
+    background-color: aquamarine;
+    color: white;
+}
+
+.imagePrincipal p {
+    color: white;
+    text-align: center;
+}
+
+.imagePrincipal p::first-line {
+    color:aquamarine;
+    font-size: 22px;
+}
+
+.imagePrincipal p::selection {
+    background-color: aquamarine;
+    color: white;
+}
+
+.tarjetas {
+    padding: 60px;
+    display: flex;
+    gap: 30px;
+}
+
+.tarjeta {
+    background-color: rgb(42, 42, 52);
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+}
+
+.informacion {
+    padding: 0 20px 20px 20px;
+}
+
+.tarjeta__imagen {
+    max-width: 100%;
+}
+
+.tarjeta__titulo,
+.tarjeta__texto {
+    color: white;
+}
+
+.pie {
+    background-color: rgba(42, 42, 52, 0.616);
+    color: white;
+    padding-block: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.link {
+    color:white;
+    font-size: 20px;
+}

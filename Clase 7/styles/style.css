@@ -1,0 +1,112 @@
+* {
+    margin: 0%;
+    padding:0%;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    border: 1px solid green;
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    'caja2 caja3 caja1 caja1'
+    'caja2 caja3 caja4 caja5'
+    'caja6 caja6 caja4 caja5';
+}
+
+.caja {
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+}
+
+.caja1 {
+    grid-area: caja1;
+    background-color: aquamarine;
+}
+
+.caja2 {
+    grid-area: caja2;
+    background-color: rgb(6, 110, 76);
+}
+
+.caja3 {
+    grid-area: caja3;
+    background-color: rgb(5, 121, 144);
+}
+
+.caja4 {
+    grid-area: caja4;
+    background-color: rgb(13, 87, 185);
+}
+
+.caja5 {
+    grid-area: caja5;
+    background-color: rgb(83, 35, 156);
+}
+
+.caja6 {
+    grid-area: caja6;
+    background-color: rgb(13, 120, 5);
+}
+
+/*Media queries siempre al final*/
+@media screen and (max-width: 780px) {
+    /*
+    .caja1 {
+        background-color: brown;
+    }
+    */
+    .contenedor {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 
+        'caja1 caja2'
+        'caja3 caja4'
+        'caja5 caja6';
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /*
+    .caja1 {
+        background-color: rgb(0, 0, 0);
+        color: white;
+    }
+
+    .caja2 {
+        background-color: rgb(9, 255, 173);
+        color: rgb(255, 255, 255);
+    }
+    */
+    .contenedor {
+        /*
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas: 
+        'caja1'
+        'caja2'
+        'caja3'
+        'caja4'
+        'caja5'
+        'caja6';
+        */
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .caja {
+        background-color: black;
+        color: white;
+        flex: 1;
+    }
+
+    .caja3 {
+        order: -1;
+    }
+}
